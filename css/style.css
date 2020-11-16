@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    
+}
+input{
+    color:lightgray;
+}
+form{
+    margin: 0 auto !important;
+    width: 50% !important;
+    
+}
