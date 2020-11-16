@@ -11,34 +11,57 @@
 </head>
 <body>
     <h4 class="text-italic text-center mt-3 font-weight-bold text-italic">Form Validation</h1>
-    <form class="bg-light mt-4 ">
+    <form class="bg-light mt-4 needs-validation " novalidate>
         <div class="form-group mt-3 mx-4 ">
             <label for="email" class="text-capitalize mt-4 font-weight-bold text-bold">Email Address</label>
-            <input type="text" class="form-control " id="email" placeholder="Enter your email address" required>
+            <input type="email" class="form-control " id="email" placeholder="Enter your email address" required>
             </div>
+            <div class="invalid-feedback">
+                please enter a valid email address
+                
+             </div>
+
+
+
             <div class="form-group mb-3 mx-4">
                 <label for="country" class="text-capitalize font-weight-bold text-bold">country</label>
                 <input type="text" id="country" class="form-control" placeholder="Enter your country name" required>
             </div>
+            <div class="valid-feedback">
+                    looks good
+                 </div>
+
             <div class="form-group mb-3 mx-4">
                     <label for="zipcode" class="text-capitalize font-weight-bold text-bold">Zip Code</label>
-                    <input type="text" id="code" class="form-control" placeholder="Enter zip code" required>
+                    <input type="number" id="code" class="form-control" placeholder="Enter zip code" required>
                 </div>
+                <div class="invalid-feedback">
+                        Please provide a valid zip code.
+                     </div>
+
 
                 <div class="form-group mb-3 mx-4">
                     <label for="password" class="text-capitalize font-weight-bold text-bold">password</label>
-                    <input type="text" id="password" class="form-control" placeholder="please enter your password" required>
+                    <input type="password" id="password" class="form-control" placeholder="please enter your password" required>
                  </div>
                  <div class="form-group mb-3 mx-4">
                         <label for="passwordConfirm" class="text-capitalize mb-4 font-weight-bold text-bold">confirm password</label>
-                        <input type="text" id="passwordConfirm" class="form-control" placeholder="please confirm your password" required>
+                        <input type="password" id="passwordConfirm" class="form-control" placeholder="please confirm your password" required>
+                 </div>
+                 <div class="valid-feedback">
+                     looks good
+
                  </div>
                  <div class="form-group mb-3 mx-4 font-weight-bold text-bold">
-                     <button class="btn-warning text-white font-weight-bold btn-lg pr-4 mx-4 mb-3">submit</button>
+                     <button name="submit" type="submit" class="btn-warning text-white font-weight-bold btn-lg pr-4 mx-4 mb-3">submit</button>
 
                  </div>
 
     </form>
+
+    <script src="js/jquery-3.5.1"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/form.js"></script>
 
     
 </body>
